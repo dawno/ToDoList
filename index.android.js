@@ -57,10 +57,11 @@ const styles = StyleSheet.create({
         flex :1,
     },
     header : {
-        backgroundColor: '#ffc300' ,
+        backgroundColor: '#9400D3' ,
         alignItems: 'center',
+        height: 55,
         justifyContent: 'center',
-        borderBottomWidth: 10,
+        borderBottomWidth: 5,
         borderBottomColor : '#ddd'
     },
     headerText:{
@@ -80,15 +81,15 @@ const styles = StyleSheet.create({
         right :0,
     },
     addButton : {
-        backgroundColor:'#ffc300',
-        width :90,
-        height :90,
+        backgroundColor:'#9400D3',
+        width :60,
+        height :60,
         borderRadius:50,
         borderColor :'#ccc',
         alignItems : 'center',
         justifyContent:'center',
         elevation :8,
-        marginBottom:-45,
+        marginBottom:-30,
         zIndex : 10,
     },
     addButtonText :{

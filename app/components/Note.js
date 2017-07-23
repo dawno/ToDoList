@@ -33,12 +33,12 @@ const styles = StyleSheet.create({
     noteText : {
         paddingLeft:20,
         borderLeftWidth:10,
-        borderLeftColor:'#ffc300'
+        borderLeftColor:'#9400D3'
     }
 ,
     noteDelete: {
         position:'absolute',
-        backgroundColor:'#2980B9',
+        backgroundColor:'#FF0000',
         alignItems : 'center',
         justifyContent:'center',
         padding: 10,
