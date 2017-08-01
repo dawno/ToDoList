@@ -22,7 +22,7 @@ export default class ToDoList extends Component {
                 <View style = {styles.header}>
                     <Text style = {styles.headerText}>- NOTER -</Text>
                 </View>
-                 <ScrollView style = {styles.scrollContainer}>
+                <ScrollView style = {styles.scrollContainer}>
                     {notes}
                 </ScrollView>
 
@@ -38,12 +38,12 @@ export default class ToDoList extends Component {
         );
     }
     addNote(){
-    if(this.state.noteText){
-        var d = new Date();
-        this.state.noteArray.push({'date' :d.getFullYear()+"/"+(d.getMonth()+1)+"/"+d.getDate(),'note': this.state.noteText});
-        this.setState({noteArray:this.state.noteArray})
-        this.setState({nodeText:''});
-    }
+        if(this.state.noteText){
+            var d = new Date();
+            this.state.noteArray.push({'date' :d.getFullYear()+"/"+(d.getMonth()+1)+"/"+d.getDate(),'note': this.state.noteText});
+            this.setState({noteArray:this.state.noteArray})
+            this.setState({nodeText:''});
+        }
     }
     deleteNote(key){
         this.state.noteArray.splice(key,1);
@@ -51,7 +51,6 @@ export default class ToDoList extends Component {
 
     }
 }
-
 const styles = StyleSheet.create({
     container: {
         flex :1,
